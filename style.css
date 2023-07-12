@@ -12,3 +12,27 @@ body {
     /* not sure i need this below */
     /* min-height: 400px; */
 }
+
+main {
+   margin: 12px 300px;
+    border: 1px solid black;
+    display: flex;
+   
+}
+
+div {
+    display: flex;
+    opacity: 1;
+    /* border: 2px solid black; */
+    margin: 20px auto;
+    padding: 2px;
+    width: 200px;
+    height: 380px;
+    overflow-wrap: break-word;
+    border: 2px solid rgb(255, 84, 104);
+}
+
+img {
+    align-self: center;
+
+}
