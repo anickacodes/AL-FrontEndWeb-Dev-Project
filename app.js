@@ -1,3 +1,7 @@
+
+
+function chuckNorrisAPI() {
+
 fetch("https://api.chucknorris.io/jokes/random")
   .then((response) => {
     return response.json();
@@ -7,6 +11,14 @@ fetch("https://api.chucknorris.io/jokes/random")
     const div = document.querySelector("div");
     div.innerText = joy.value;
     
-  });
+  })
+}
 
-console.log("yo");
+console.log(chuckNorrisAPI)
+
+
+
+//add a form event
+//preventDefault
+
+//add api refresh to form or button

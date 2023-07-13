@@ -6,7 +6,9 @@
 
 body {
     background-color: teal;
-    background-image: url(./assets/cnl.jpeg);
+
+    background-image: linear-gradient(rgba(52, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg);
+    /* i love this but its darklinear-gradient(rgb(9, 9, 43), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg); */
     /* default scroll */
     background-attachment: scroll; 
     /* not sure i need this below */
@@ -14,25 +16,37 @@ body {
 }
 
 main {
+    align-self:auto;
    margin: 12px 300px;
     border: 1px solid black;
     display: flex;
-   
+    flex-wrap: wrap;
+    padding: 2px 52px;
 }
 
-div {
-    display: flex;
-    opacity: 1;
-    /* border: 2px solid black; */
+  div {
+    /* opacity: 1.6; */
+display: inherit;
     margin: 20px auto;
-    padding: 2px;
-    width: 200px;
-    height: 380px;
+    padding: 222px 3px 9px 55px;
+    width: 600px;
+    height: 220px;
     overflow-wrap: break-word;
     border: 2px solid rgb(255, 84, 104);
 }
 
-img {
-    align-self: center;
+#parental-advisory {
+    margin: 11px;
+   /* padding:  22px auto; */
+}
+
+form {
 
 }
+
+
+
+
+
+
+/* @media */
