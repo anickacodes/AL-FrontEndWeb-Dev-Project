@@ -19,23 +19,25 @@ body {
     background-image: linear-gradient(rgba(52, 52, 255, 0.5), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg);
     /* i love this but its darklinear-gradient(rgb(9, 9, 43), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg); */
     /* default scroll */
-    background-attachment: scroll; 
+    background-attachment: scroll;
     /* not sure i need this below */
     /* min-height: 400px; */
 }
 
+a:hover {
+    background-color: rgb(52, 228, 193);
+}
 main {
-    align-self:auto;
-   margin: 12px 300px;
+    align-self: auto;
+    margin: 12px 300px;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     padding: 2px 52px;
 }
 
-  div {
-    /* opacity: 1.6; */
-display: inherit;
+div {
+    display: inherit;
     margin: 20px auto;
     padding: 222px 3px 9px 55px;
     width: 600px;
@@ -47,19 +49,32 @@ display: inherit;
 fieldset {
     display: flexbox;
 }
+
 #parental-advisory {
     margin: 11px;
-   /* padding:  22px auto; */
 }
 
 form {
-height: 22px;
-width: 20px;
+    height: 22px;
+    width: 20px;
 }
 
 
+@media (max-width: 1079px) {
+    main {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 768px) {
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
 
 
-
-
-/* @media */
+} */

@@ -13,7 +13,9 @@
     <nav><a id="home" href="../index.html"> Home </a></nav>
 
     <div>
-        <video><source></video>
+        <video>
+            <source>
+        </video>
     </div>
     <footer>
         <p><strong>Please excuse our appearance; this site is currently under construction</strong></p>
@@ -39,7 +41,18 @@
         }
 
         a {
-        font-size: 24px;
+            font-size: 24px;
+
+        }
+
+        a:hover {
+            background-color: rgb(52, 228, 193);
+        }
+
+        @media (max-width: 1279px) {
+            footer {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </body>
