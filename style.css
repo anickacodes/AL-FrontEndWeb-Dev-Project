@@ -4,10 +4,19 @@
 
 }
 
+/* html {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      'header'
+      'main'
+      'footer';
+} */
 body {
     background-color: teal;
 
-    background-image: linear-gradient(rgba(52, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg);
+    background-image: linear-gradient(rgba(52, 52, 255, 0.5), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg);
     /* i love this but its darklinear-gradient(rgb(9, 9, 43), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg); */
     /* default scroll */
     background-attachment: scroll; 
@@ -35,13 +44,17 @@ display: inherit;
     border: 2px solid rgb(255, 84, 104);
 }
 
+fieldset {
+    display: flexbox;
+}
 #parental-advisory {
     margin: 11px;
    /* padding:  22px auto; */
 }
 
 form {
-
+height: 22px;
+width: 20px;
 }
 
 
