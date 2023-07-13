@@ -12,6 +12,9 @@ fetch("https://api.chucknorris.io/jokes/random")
     div.innerText = joy.value;
     
   })
+  // .catch(reject) 
+  //   console.log("whoops", reject)
+  
 }
 
 chuckNorrisAPI()
