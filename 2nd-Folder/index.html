@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./index.js" defer></script>
- 
+
     <title>building</title>
 </head>
 
@@ -14,12 +14,13 @@
     <nav><a id="home" href="../index.html"> Home </a></nav>
 
     <div>
-       <ul>
+        <ul>
 
-       </ul>
+        </ul>
     </div>
     <footer>
-        <p><strong>Please excuse our appearance; this site is currently under construction</strong></p>
+        <p>Please excuse our appearance; this site is currently under construction</p>
+        <img draggable="true" src="../assets/chuck-gif.gif" width="auto" height="auto"/>
     </footer>
     <style>
         body {
@@ -39,7 +40,11 @@
             left: 0;
             right: 0;
             bottom: 0;
-            height: 200px !important;
+            height: 210px !important;
+            font-size: 16px;
+			background: linear-gradient(to right, red , blue);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
         }
 
         a {
@@ -50,19 +55,27 @@
         a:hover {
             background-color: rgb(52, 228, 193);
         }
+
         ul {
             position: absolute;
-  z-index: 9;
-  background-color: #f13d9d9d;
-  border: 10px inset #771616;
-  text-align: center;
-  cursor:grabbing;
- /* padding: 10px 20px;
+            z-index: 9;
+            background-color: #f13d9d9d;
+            border: 33px inset #771616;
+            text-align: center;
+            cursor: grabbing;
+            list-style: none;
+            /* padding: 10px 20px;
   
   z-index: 10;
   background-color: #2196F3;
   color: #fff; */
         }
+img {
+    cursor: grabbing;
+    margin: 2px 4px;
+   position: relative;
+   align-items:flex-end;
+}
         /* @media (max-width: 1279px) {
             footer {
                 grid-template-columns: repeat(2, 1fr);

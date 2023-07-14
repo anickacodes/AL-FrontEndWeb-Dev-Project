@@ -11,6 +11,7 @@
 //     document.querySelector('body').style.opacity = 1
 // })
 const sentence = document.querySelector("p");
+sentence.style.fontWeight = 'bold'
 const words = sentence.innerText.split(" ");
 
 sentence.innerText = words
@@ -22,7 +23,7 @@ sentence.innerText = words
 const div = document.querySelector("div");
 
 const newForm = document.createElement("form");
-
+form.id = 'creat-list'
 const input = document.createElement("input");
 input.type = "text";
 input.placeholder = "sample text 🍱";
@@ -50,14 +51,18 @@ const ul = document.querySelector('ul')
 ul.draggable = true;
 for (let i=1; i<5; i++) {
 const li = document.createElement('li')
-
-
+li.classList.add('category')
 ul.append(li)
-// ul.addEventListener()
+
+ul.addEventListener("", (event)=>{
+if (event.target.tagName === "li") {
+  fetch("https://api.chucknorris.io/jokes/random?category=science")
+  .then((response) => response.json())
+  .then((joy) => {li.append(joy.value)});
+
+}
+})
 }
 
 
-fetch("https://api.chucknorris.io/jokes/random?category=science")
-  .then((response) => response.json())
-  .then((joy) => console.log(joy.value));
 
