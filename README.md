@@ -18,10 +18,11 @@ The `home` page includes a linked css file ; the `sub-html` page is styled insid
 
 
 *STRETCH GOALS* 
-css transition appears on home page load 
+
+-css transition appears on home page load 
 
 `Add a button or icon to the error that displays when a form is incorrectly filled out. When this button or icon is clicked, the error is removed from the page.` 
-Does alert() count ?
+-Does alert() count ?
 
 
  ... this is in progress 
