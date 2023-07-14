@@ -20,7 +20,7 @@ body {
 
     background-color: teal;
 
-    background-image: linear-gradient(rgba(52, 52, 255, 0.5), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg);
+    background-image: linear-gradient(rgba(44, 42, 255, 0.175), rgba(255, 255, 0, 0.069)), url(./assets/chuck-norris-kick-try-me.gif);
     /* i love this but its darklinear-gradient(rgb(9, 9, 43), rgba(255, 255, 0, 0.5)), url(./assets/cnl.jpeg); */
     /* default scroll */
     background-attachment: scroll;
@@ -37,18 +37,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 25px 52px;
-    height:auto;
+    height: auto;
+    background-color: rgba(53, 3, 29, 0.975);
+
 }
-
+/* color: rgb(239, 222, 224); */
 div {
-
+    border: 2px solid rgb(243, 174, 182);
     display: inherit;
     margin: 20px auto;
     padding: 222px 3px 9px 55px;
     width: 600px;
     height: 220px;
+    text-shadow: 3px 6px 10px #470887;
     overflow-wrap: break-word;
-    border: 2px solid rgb(255, 84, 104);
+
+
 }
 
 a:hover {

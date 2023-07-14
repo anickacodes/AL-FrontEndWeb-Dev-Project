@@ -1,6 +1,6 @@
 
 
-function chuckNorrisAPI() {
+const chuckNorrisAPI =() =>  {
 
 fetch("https://api.chucknorris.io/jokes/random")
   .then((response) => {
@@ -10,14 +10,18 @@ fetch("https://api.chucknorris.io/jokes/random")
 
     const div = document.querySelector("div");
     div.innerText = joy.value;
+    div.style.color = 'white'
+    div.style.fontSize = 'xx-large'
     
   })
-  // .catch(reject) 
-  //   console.log("whoops", reject)
+  // .catch(err) 
+  //   console.log("whoops", err)
   
 }
-
 chuckNorrisAPI()
+// i tried a& failed here 
+//const addEmoji = chuckNorrisAPI.map((text)=> `text + '🥲'`)
+
 
 
 
