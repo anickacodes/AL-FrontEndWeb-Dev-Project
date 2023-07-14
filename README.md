@@ -13,9 +13,15 @@ The `home` page links to a `sub-html` page
 >https://anickacodes.github.io/AL-FrontEndWeb-Dev-Project/2nd%20Folder/index.html  
 a `hover` feature is seen on both links 
 
-The `home` page includes a linked css file ; the `sub-html` page is styled inside the html 
+The `home` page includes a linked css file ; the `sub-html` page is styled inside the html
+
+
+
+*STRETCH GOALS* 
+css transition appears on home page load 
+
+`Add a button or icon to the error that displays when a form is incorrectly filled out. When this button or icon is clicked, the error is removed from the page.` 
+Does alert() count ?
+
 
  ... this is in progress 
-
-
-
