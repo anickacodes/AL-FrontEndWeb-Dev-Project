@@ -9,24 +9,25 @@ sentence.innerText = words
   .join(" ");
 
 const div = document.querySelector("div");
-div.classList.add('hold-input')
+div.classList.add("hold-input");
 
 const newForm = document.createElement("form");
 newForm.id = "create-list";
 
 //create text field
 const input = document.createElement("input");
-input.id = 'text-input'
+input.id = "text-input";
 input.value = "";
 input.type = "text";
 input.required = true;
-input.placeholder = "Type a word, add a space";
+
+input.placeholder = "Submit for random Chuck food fact";
 newForm.append(input);
 
 //create submit button
 const listSubmit = document.createElement("input");
 listSubmit.type = "submit";
-listSubmit.id = 'list'
+listSubmit.id = "list";
 
 const ul = document.querySelector("ul");
 
@@ -40,7 +41,6 @@ newForm.addEventListener("submit", (event) => {
     li.innerText = inputText;
     ul.append(li);
 
-
     fetch("https://api.chucknorris.io/jokes/random?category=food")
       .then((response) => response.json())
       .then((joy) => li.append(joy.value));
@@ -53,8 +53,8 @@ newForm.append(listSubmit);
 
 const newInput = document.createElement("input");
 newInput.type = "submit";
-newInput.id = 'click-btn'
-newInput.value = "Just For Fun!";
+newInput.id = "click-btn";
+newInput.value = "For Fun!";
 newInput.style.color = "blue";
 
 newInput.addEventListener("click", (event) => {
