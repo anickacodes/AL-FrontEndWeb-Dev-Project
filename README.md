@@ -7,6 +7,7 @@ This project showcases front-end and back-end optimization
 There is a deployed front-end application.
 Users can interact through button clicks and form inputs.
 Users can make requests to an external API via formr submission
+Users can contact the author via at least email via home page
 There is a theme and unique product design.
 
 **Direct link to our site**
