@@ -9,12 +9,14 @@ sentence.innerText = words
   .join(" ");
 
 const div = document.querySelector("div");
+div.classList.add('hold-input')
 
 const newForm = document.createElement("form");
 newForm.id = "create-list";
 
 //create text field
 const input = document.createElement("input");
+input.id = 'text-input'
 input.value = "";
 input.type = "text";
 input.required = true;
@@ -24,6 +26,7 @@ newForm.append(input);
 //create submit button
 const listSubmit = document.createElement("input");
 listSubmit.type = "submit";
+listSubmit.id = 'list'
 
 const ul = document.querySelector("ul");
 
@@ -50,6 +53,7 @@ newForm.append(listSubmit);
 
 const newInput = document.createElement("input");
 newInput.type = "submit";
+newInput.id = 'click-btn'
 newInput.value = "Just For Fun!";
 newInput.style.color = "blue";
 

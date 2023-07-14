@@ -9,7 +9,7 @@
 
 body {
     margin: 25px;
-
+font-style: Verdana, sans-serif;
     background-color: teal;
 
     background-image: linear-gradient(rgba(44, 42, 255, 0.175), rgba(255, 255, 0, 0.069)), url(./assets/chuck-norris-kick-try-me.gif);
@@ -35,11 +35,12 @@ main {
 }
 
 span {
+    font-style: Georgia, serif;
     margin: 17px auto;
-color: rgb(239, 222, 224);
-text-align:center;
-overflow-wrap: break-word;
-text-shadow: 4px 6px 10px #a04ef2;
+    color: rgb(239, 222, 224);
+    text-align: center;
+    overflow-wrap: break-word;
+    text-shadow: 4px 6px 10px #a04ef2;
 }
 
 div {
@@ -54,10 +55,10 @@ div {
     overflow-wrap: break-word;
 }
 
-.personal-links{
-    display:inherit;
+.personal-links {
+    display: inherit;
     border: 2px inset rgb(2, 60, 60);
-    padding: 28px 3px 9px 55px;
+    padding: 28px 3px 33px 55px;
     height: 70px;
     align-items: center;
 }
@@ -69,12 +70,14 @@ a:hover {
 
 fieldset {
     display: flexbox;
-    padding: 16px 22px 6px 12px;
+    padding:
+     6px 12px 6px 12px;
+    border: 11px inset rgba(43, 32, 38, 0.834);
 }
 
 a {
     display: block;
-    color:rgb(223, 223, 193);
+    color: rgb(223, 223, 193);
     text-indent: 22px;
     font-size: x-large;
     text-align: justify;
@@ -82,7 +85,7 @@ a {
 }
 
 #parental-advisory {
-    margin: 12px 4px 20px 9px;
+    border: 2px inset rgba(91, 40, 72, 0.834);
 }
 
 form {
@@ -95,15 +98,16 @@ a[href^='mailto']::before {
 }
 
 a[href^='tel']::before {
-    content: '📞 ';   
+    content: '📞 ';
 }
 
-footer{
+footer {
     background-color: white;
 }
-@media (max-width: 1079px) {
+
+@media (max-width: 1079px){
     main {
-        width: 100%;
+        width: 100vh;
+        height: 100vh;
     }
 }
-
