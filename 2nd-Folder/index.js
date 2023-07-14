@@ -23,7 +23,7 @@ sentence.innerText = words
 const div = document.querySelector("div");
 
 const newForm = document.createElement("form");
-form.id = 'creat-list'
+newForm.id = 'create-list'
 const input = document.createElement("input");
 input.type = "text";
 input.placeholder = "sample text 🍱";
@@ -58,7 +58,7 @@ ul.addEventListener("", (event)=>{
 if (event.target.tagName === "li") {
   fetch("https://api.chucknorris.io/jokes/random?category=science")
   .then((response) => response.json())
-  .then((joy) => {li.append(joy.value)});
+  .then((joy) => li.append(joy.value));
 
 }
 })
