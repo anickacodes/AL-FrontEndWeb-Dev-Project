@@ -21,7 +21,7 @@ input.value = "";
 input.type = "text";
 input.required = true;
 
-input.placeholder = "Submit for random Chuck food fact";
+input.placeholder = "'Submit' = Chuck food fact";
 newForm.append(input);
 
 //create submit button
