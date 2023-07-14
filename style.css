@@ -16,6 +16,7 @@
 
 
 body {
+    margin: 25px ;
 
     background-color: teal;
 
@@ -53,9 +54,9 @@ a:hover {
     background-color: rgb(52, 228, 193);
 }
 
-fieldset {
+fieldset, address {
     display: flexbox;
-    
+    padding: 2px;
 }
 
 #parental-advisory {
@@ -68,6 +69,13 @@ form {
     width: 20px;
 }
 
+a[href^='mailto']::before {
+    content: '📧 ';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
 
 @media (max-width: 1079px) {
     main {

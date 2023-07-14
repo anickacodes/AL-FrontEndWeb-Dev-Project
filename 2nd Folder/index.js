@@ -46,6 +46,16 @@ div.append(newForm);
 newForm.append(newInput);
 
 //create error msg for form submmit
-fetch("https://api.chucknorris.io/jokes/random?category=animal")
-.then((response) => response.json())
-.then((joy) => console.log(joy.value))
+const ul = document.querySelector('ul')
+
+for (let i=1; i<5; i++) {
+const li = document.createElement('li')
+
+ul.append(li)
+}
+
+
+fetch("https://api.chucknorris.io/jokes/random?category=science")
+  .then((response) => response.json())
+  .then((joy) => console.log(joy.value));
+
