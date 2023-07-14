@@ -19,6 +19,7 @@ fetch("https://api.chucknorris.io/jokes/random")
   
 }
 chuckNorrisAPI()
+
 // i tried a& failed here 
 //const addEmoji = chuckNorrisAPI.map((text)=> `text + '🥲'`)
 

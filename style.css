@@ -4,15 +4,7 @@
 
 }
 
-/* html {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-      'header'
-      'main'
-      'footer';
-} */
+
 
 
 body {
@@ -41,22 +33,38 @@ main {
     background-color: rgba(53, 3, 29, 0.975);
 
 }
-/* color: rgb(239, 222, 224); */
+
+span {
+    margin: 17px auto;
+color: rgb(239, 222, 224);
+text-align:center;
+overflow-wrap: break-word;
+text-shadow: 4px 6px 10px #a04ef2;
+}
+
 div {
-    border: 2px solid rgb(243, 174, 182);
+    border: 3px inset rgb(234, 214, 216);
     display: inherit;
     margin: 20px auto;
-    padding: 222px 3px 9px 55px;
+    padding: 40px 46px 99px 50px;
     width: 600px;
     height: 220px;
-    text-shadow: 3px 6px 10px #470887;
+    text-align: center;
+    text-shadow: 4px 6px 10px #a04ef2;
     overflow-wrap: break-word;
+}
 
-
+.personal-links{
+    display:inherit;
+    border: 2px inset rgb(2, 60, 60);
+    padding: 28px 3px 9px 55px;
+    height: 70px;
+    align-items: center;
 }
 
 a:hover {
     background-color: rgb(52, 228, 193);
+    width: 300px;
 }
 
 fieldset {
@@ -66,7 +74,9 @@ fieldset {
 
 a {
     display: block;
+    color:rgb(223, 223, 193);
     text-indent: 22px;
+    font-size: x-large;
     text-align: justify;
     overflow-wrap: break-word;
 }
@@ -85,24 +95,15 @@ a[href^='mailto']::before {
 }
 
 a[href^='tel']::before {
-    content: '📞 ';
+    content: '📞 ';   
 }
 
+footer{
+    background-color: white;
+}
 @media (max-width: 1079px) {
     main {
         width: 100%;
     }
 }
 
-/* @media (max-width: 768px) {
-    header {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    main {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 50px;
-    }
-
-
-} */

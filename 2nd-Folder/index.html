@@ -14,35 +14,30 @@
     <nav><a id="home" href="../index.html"> Home </a></nav>
     <br />
     <div>
-        <ul>
+        <ul draggable="true">
 
         </ul>
     </div>
 
     <footer>
-        <p id="demo">Please excuse our appearance; this site is currently under construction</p>
+        <p>Now Chuck will show us how to center our core so we can handle what life throws our way ... </p>
         <img draggable="true" src="../assets/chuck-gif.gif" width="auto" height="auto" />
     </footer>
     <style>
         body {
-
             background-color: rgb(136, 219, 230);
             text-align: center;
             font-family: fantasy;
-            
         }
 
         div {
-
             margin: 25px 200px 50px;
             padding: 20px;
-
         }
 
 
         a {
             font-size: 24px;
-
         }
 
         a:hover {
@@ -50,44 +45,44 @@
         }
 
         ul {
-            position: absolute;
+            position: relative;
             z-index: 9;
             background-color: #5c4f559d;
-            border: 33px inset #f74e0b;
+            border: 13px outset #f74e0b;
             text-align: center;
             cursor: grabbing;
         }
 
         footer {
-
             border: 22px outset rgb(45, 10, 23);
             width: auto;
             text-align: center;
             display: grid;
-            position: fixed;
+            position:absolute;
             left: 0;
             right: 0;
             bottom: 0;
-            height: 210px !important;
-            font-size: 16px;
+            height: 317px !important;
+            font-size: 17px;
             background: linear-gradient(to right, red, blue);
-            -webkit-text-fill-color:rgb(255, 255, 255);
+            -webkit-text-fill-color: rgb(255, 255, 255);
             background-clip: text;
             text-shadow: #97cf749d;
         }
 
         img {
+            height:260px;
             cursor: grabbing;
-            margin: 2px 4px;
-            position: relative;
-            align-items: flex-end;
+            margin-left: 384px;
+            position:relative;
+            align-self: flex-end;
         }
 
-        /* @media (max-width: 1279px) {
+        @media (max-width: 1279px) {
             footer {
                 grid-template-columns: repeat(2, 1fr);
             }
-        } */
+        }
     </style>
 </body>
 
