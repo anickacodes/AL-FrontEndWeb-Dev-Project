@@ -16,7 +16,7 @@
 
 
 body {
-    margin: 25px ;
+    margin: 25px;
 
     background-color: teal;
 
@@ -36,11 +36,12 @@ main {
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-    padding: 2px 52px;
+    padding: 25px 52px;
+    height:auto;
 }
 
 div {
-   
+
     display: inherit;
     margin: 20px auto;
     padding: 222px 3px 9px 55px;
@@ -54,14 +55,20 @@ a:hover {
     background-color: rgb(52, 228, 193);
 }
 
-fieldset, address {
+fieldset {
     display: flexbox;
-    padding: 2px;
+    padding: 16px 22px 6px 12px;
+}
+
+a {
+    display: block;
+    text-indent: 22px;
+    text-align: justify;
+    overflow-wrap: break-word;
 }
 
 #parental-advisory {
-    
-    margin: 11px;
+    margin: 12px 4px 20px 9px;
 }
 
 form {

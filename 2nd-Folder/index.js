@@ -24,20 +24,48 @@ const div = document.querySelector("div");
 
 const newForm = document.createElement("form");
 newForm.id = "create-list";
-const input = document.createElement("input");
-input.type = "text";
-input.placeholder = "sample text 🍱";
 
+//create text field
+const input = document.createElement("input");
+input.value = "";
+input.type = "text";
+input.required = true;
+input.placeholder = "sample text 🍱";
 newForm.append(input);
 
+//create submit button
 const listSubmit = document.createElement("input");
 listSubmit.type = "submit";
 
- listSubmit.addEventListener("submit", (event) => {
+listSubmit.addEventListener("submit", (event) => {
+  event.preventDefault();
 
- })
+  const inputText = input.value.trim();
+  if (inputText !== "") {
+    for (let i = 1; i < 5; i++) {
+      const li = document.createElement("li");
+      li.classList.add("category");
+      //is this smart
+      li.innerText = inputText
+      ul.append(li);
 
+      //i need help appending what's in the input to the li
+     
+      console.log(ul)
+      fetch(
+        "https://api.chucknorris.io/jokes/random?category=food"
+      )
+        .then((response) => response.json())
+        .then((joy) => console.log(joy.value));
+    }
+    // ul.addEventListener("input", (event) => {
+    //   console.log(event.target);
 
+    event.target.reset();
+
+    // });
+  }
+});
 
 newForm.append(listSubmit);
 
@@ -58,20 +86,3 @@ div.append(newForm);
 newForm.append(newInput);
 
 //create error msg for form submmit
-const ul = document.querySelector("ul");
-ul.draggable = true;
-for (let i = 1; i < 5; i++) {
-  const li = document.createElement("li");
-  li.classList.add("category");
-  ul.append(li);
-
-  ul.addEventListener("input", (event) => {
-    console.log(event.target);
-
-    if (event.target === "li") {
-      fetch("https://api.chucknorris.io/jokes/random?category=science")
-        .then((response) => response.json())
-        .then((joy) => console.log(joy.value));
-    }
-  });
-}
